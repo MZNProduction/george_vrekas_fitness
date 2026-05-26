@@ -1,0 +1,39 @@
+/* Custom CSS για το GV Fitness Place */
+
+:root {
+    --brand-neon: #eab308; /* Κίτρινο / Χρυσό */
+    --brand-dark: #0f172a; /* Slate 900 */
+    --brand-card: #1e293b; /* Slate 800 */
+}
+
+/* Αρχικές ρυθμίσεις για σωστή αντίθεση και σκοτεινό θέμα */
+body {
+    background-color: var(--brand-dark) !important;
+    color: #f3f4f6 !important;
+}
+
+.bg-brand-dark {
+    background-color: #0f172a !important;
+}
+
+.bg-brand-card {
+    background-color: #1e293b !important;
+}
+
+.text-brand-neon {
+    color: #eab308 !important;
+}
+
+.bg-brand-neon {
+    background-color: #eab308 !important;
+}
+
+.border-brand-neon {
+    border-color: #eab308 !important;
+}
+
+/* Εφέ σταδιακού σβησίματος (Feather) στο κάτω μέρος του Hero */
+.feather-bottom {
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%);
+}
