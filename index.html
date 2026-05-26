@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="el" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Fitness Place | George Vrekas - Personal Training Κερατσίνι</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            neon: '#eab308',
+                            dark: '#0f172a',
+                            card: '#1e293b'
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-gym': "url('ASSETS/GYM/George Gym 1.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-dark text-gray-100 font-sans overflow-x-hidden">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-dark/80 backdrop-blur-md border-b border-gray-800 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-xl md:text-2xl font-extrabold tracking-wider text-white">
+            GV <span class="text-brand-neon">FITNESS PLACE</span>
+        </div>
+        <a href="tel:6978141902" class="bg-brand-neon text-black font-bold px-4 py-2 rounded-full hover:bg-yellow-500 transition duration-300 flex items-center gap-2 text-sm md:text-base">
+            <i class="fa-solid fa-phone"></i> Κάλεσε Τώρα
+        </a>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 relative overflow-hidden bg-brand-dark">
+        
+        <div class="absolute inset-0 bg-hero-gym bg-cover bg-center bg-no-repeat z-0 feather-bottom"></div>
+
+        <div class="absolute inset-0 bg-black/65 backdrop-blur-[3px] z-10"></div>
+
+        <div class="max-w-4xl mx-auto space-y-6 relative z-20">
+            <h1 id="hero-title" class="text-4xl md:text-7xl font-extrabold text-white opacity-0 uppercase tracking-tight transform translate-y-10">
+                ΓΙΩΡΓΟΣ ΒΡΕΚΑΣ
+            </h1>
+            <p id="hero-subtitle" class="text-xl md:text-3xl font-semibold text-brand-neon uppercase tracking-wide opacity-0 transform translate-y-5">
+                Personal Training & Fitness Studio
+            </p>
+            <p id="hero-text" class="text-gray-200 max-w-2xl mx-auto text-base md:text-lg opacity-0 font-medium drop-shadow-md">
+                Εξειδικευμένα προγράμματα γυμναστικής προσαρμοσμένα στις δικές σου ανάγκες. Ώρα να πετύχεις τους στόχους σου στο δικό μας private χώρο.
+            </p>
+            <div id="hero-buttons" class="pt-4 opacity-0 flex flex-col sm:flex-row justify-center gap-4 transform translate-y-5">
+                <a href="#about" class="border border-white/20 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 backdrop-blur-sm">
+                    Μάθε Περισσότερα
+                </a>
+                <a href="https://www.tiktok.com/@georgevrekas" target="_blank" class="bg-[#ff0050] hover:bg-[#e60048] text-white font-semibold px-8 py-3 rounded-lg transition duration-300 flex items-center justify-center gap-2 shadow-lg shadow-black/30">
+                    <i class="fa-brands fa-tiktok"></i> TikTok Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 md:px-12 max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 info-animate opacity-0 transform translate-y-10">
+            <span class="text-brand-neon font-bold uppercase tracking-widest text-sm">Η Επιχείρηση</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Αποκλειστικότητα & Αποτέλεσμα</h2>
+            <p class="text-gray-400 leading-relaxed">
+                Στο <strong>GV Fitness Place</strong> στο Κερατσίνι, εστιάζουμε στην σωστή καθοδήγηση και την επίβλεψη. Είτε ο στόχος σου είναι η απώλεια βάρους, η μυϊκή ενδυνάμωση, είτε η βελτίωση της φυσικής σου κατάστασης, σχεδιάζουμε το κατάλληλο πλάνο για εσένα.
+            </p>
+            <div class="border-l-4 border-brand-neon pl-4 py-2 italic text-gray-300 bg-brand-card/30 rounded-r">
+                "Δραστηριοποιούμαστε στις περιοχές Κερατσίνι, Δραπετσώνα και γύρω προάστια."
+            </div>
+        </div>
+        <div class="bg-brand-card p-8 rounded-2xl border border-gray-800 space-y-6 info-animate opacity-0 transform translate-y-10 shadow-xl">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-star text-brand-neon"></i> Γιατί να μας επιλέξεις;
+            </h3>
+            <ul class="space-y-4 text-gray-400">
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-check text-brand-neon mt-1"></i>
+                    <span><strong>Personal / Semi-Private Sessions:</strong> 100% προσοχή πάνω σου.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-check text-brand-neon mt-1"></i>
+                    <span><strong>Σύγχρονος Εξοπλισμός:</strong> Καθαρός και πλήρως εξοπλισμένος χώρος.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-check text-brand-neon mt-1"></i>
+                    <span><strong>Κοινότητα:</strong> Κίνητρο και υποστήριξη σε κάθε σου προπόνηση.</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-brand-card/30 border-t border-gray-800 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <span class="text-brand-neon font-bold uppercase tracking-widest text-sm">Our Space</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Ο Χώρος Μας</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Ένα σύγχρονο, private περιβάλλον με επαγγελματικό εξοπλισμό για να κάνεις την προπόνησή σου με άνεση.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="gallery-img opacity-0 transform translate-y-10 overflow-hidden rounded-xl border border-gray-800 bg-brand-card group h-64">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/9537232055299965179_0" alt="GV Fitness Place Interior 1" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img opacity-0 transform translate-y-10 overflow-hidden rounded-xl border border-gray-800 bg-brand-card group h-64">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/9537232055299965179_1" alt="GV Fitness Place Interior 2" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="gallery-img opacity-0 transform translate-y-10 overflow-hidden rounded-xl border border-gray-800 bg-brand-card group h-64">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/9537232055299965179_2" alt="GV Fitness Place Interior 3" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tiktok-feed" class="py-20 border-t border-gray-800 px-4">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <span class="text-brand-neon font-bold uppercase tracking-widest text-sm">TikTok Videos</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Viral Tips & Προπονήσεις</h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Δες μερικά από τα πιο δημοφιλή βίντεο και συμβουλές γυμναστικής απευθείας από το προφίλ του Γιώργου.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                
+                <div class="tiktok-video-card opacity-0 transform translate-y-10 flex justify-center bg-brand-card/40 p-2 rounded-2xl border border-gray-800 overflow-hidden">
+                    <blockquote class="tiktok-embed" data-video-id="7281736341912620321" style="max-width: 325px; min-width: 288px;">
+                        <section></section>
+                    </blockquote>
+                </div>
+                
+                <div class="tiktok-video-card opacity-0 transform translate-y-10 flex justify-center bg-brand-card/40 p-2 rounded-2xl border border-gray-800 overflow-hidden">
+                    <blockquote class="tiktok-embed" data-video-id="7276518122738191648" style="max-width: 325px; min-width: 288px;">
+                        <section></section>
+                    </blockquote>
+                </div>
+
+                <div class="tiktok-video-card opacity-0 transform translate-y-10 flex justify-center bg-brand-card/40 p-2 rounded-2xl border border-gray-800 overflow-hidden">
+                    <blockquote class="tiktok-embed" data-video-id="7280252963342339361" style="max-width: 325px; min-width: 288px;">
+                        <section></section>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-card/50 border-y border-gray-800 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto text-center space-y-12">
+            <div class="space-y-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Social Links</h2>
+            </div>
+            
+            <div class="grid sm:grid-cols-3 gap-6">
+                <a href="https://www.tiktok.com/@georgevrekas" target="_blank" class="social-card opacity-0 transform translate-y-10 bg-brand-card border border-gray-800 p-8 rounded-xl hover:border-[#ff0050] transition-all duration-300 group block">
+                    <i class="fa-brands fa-tiktok text-4xl text-gray-400 group-hover:text-[#ff0050] transition duration-300 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">TikTok</h3>
+                    <p class="text-gray-400 text-sm">Δες viral βίντεο και tips.</p>
+                </a>
+
+                <a href="https://www.youtube.com/channel/UC-sZ96mLTmRyY7B24S_1Vsg" target="_blank" class="social-card opacity-0 transform translate-y-10 bg-brand-card border border-gray-800 p-8 rounded-xl hover:border-[#ff0000] transition-all duration-300 group block">
+                    <i class="fa-brands fa-youtube text-4xl text-gray-400 group-hover:text-[#ff0000] transition duration-300 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">YouTube</h3>
+                    <p class="text-gray-400 text-sm">Αναλύσεις & vlogs.</p>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100086015466552" target="_blank" class="social-card opacity-0 transform translate-y-10 bg-brand-card border border-gray-800 p-8 rounded-xl hover:border-[#1877f2] transition-all duration-300 group block">
+                    <i class="fa-brands fa-facebook text-4xl text-gray-400 group-hover:text-[#1877f2] transition duration-300 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Facebook</h3>
+                    <p class="text-gray-400 text-sm">Νέα του γυμναστηρίου.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6 md:px-12 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8 contact-animate opacity-0 transform translate-y-10">
+                <div>
+                    <span class="text-brand-neon font-bold uppercase tracking-widest text-sm">Επικοινωνία</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Είμαστε εδώ για σένα</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-brand-card border border-gray-800 flex items-center justify-center text-brand-neon">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-400 text-sm">Διεύθυνση</h4>
+                            <p class="text-white font-medium">Σολομωνίδου 5, Κερατσίνι, 18755</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-brand-card border border-gray-800 flex items-center justify-center text-brand-neon">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-400 text-sm">Τηλέφωνο</h4>
+                            <a href="tel:6978141902" class="text-white font-medium hover:text-brand-neon transition">697 814 1902</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-brand-card border border-gray-800 flex items-center justify-center text-brand-neon">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-gray-400 text-sm">Email</h4>
+                            <a href="mailto:georgevrekas@hotmail.com" class="text-white font-medium hover:text-brand-neon transition">georgevrekas@hotmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-animate opacity-0 transform translate-y-10 h-72 md:h-full bg-brand-card rounded-2xl border border-gray-800 overflow-hidden relative min-h-[300px]">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.61400955011524!2d23.62439140677451!3d37.9578917246667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bbc52e2ace7b%3A0x5e3a2bee1db7af66!2sGV%20Fitness%20Place!5e0!3m2!1sen!2sgr!4v1779777504961!5m2!1sen!2sgr" 
+                    class="w-full h-full border-0 opacity-90 hover:opacity-100 transition duration-300"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="mt-24 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+            © 2026 GV Fitness Place. All rights reserved. Created for George Vrekas.
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
